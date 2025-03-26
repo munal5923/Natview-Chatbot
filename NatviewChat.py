@@ -41,7 +41,7 @@ if 'store' not in st.session_state:
 
 
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-loader=PyPDFLoader("Natview_chatbot/NatviewWebsite.pdf") ## Data Ingestion step
+loader=PyPDFLoader("NatviewWebsite.pdf") ## Data Ingestion step
 docs=loader.load() ## Document Loading
 
 print(f"Total documents loaded: {len(docs)}")

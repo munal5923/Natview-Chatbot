@@ -4,7 +4,6 @@ langchain-groq
 langchain_community
 langchain_core
 langchain_huggingface
-langchain-text-splitter
 faiss-cpu
 pypdf
 huggingface-hub

@@ -1,10 +1,10 @@
 streamlit
 langchain
-langchain_groq
+langchain-groq
 langchain_community
 langchain_core
 langchain_huggingface
-langchain_text_splitter
+langchain-text-splitte
 faiss-cpu
 pypdf
 huggingface-hub

@@ -44,6 +44,7 @@ embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 loader=PyPDFLoader("NatviewWebsite.pdf") ## Data Ingestion step
 docs=loader.load() ## Document Loading
 
+
 print(f"Total documents loaded: {len(docs)}")
 text_splitter=RecursiveCharacterTextSplitter(chunk_size=5000,chunk_overlap=200)
 final_documents=text_splitter.split_documents(docs[:50])

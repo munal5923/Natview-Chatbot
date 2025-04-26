@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NiftyBot Test</title>
+</head>
+<body>
+    <h1>NiftyBot Test</h1>
+    <input type="text" id="question" placeholder="Ask a question">
+    <button onclick="askQuestion()">Send</button>
+    <div id="response"></div>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('question').value;
+            const responseDiv = document.getElementById('response');
+            
+            responseDiv.textContent = "Loading...";
+            
+            try {
+                const formData = new FormData();
+                formData.append('msg', question);
+                
+                const response = await fetch('https://munahl5923--niftybot-api-flask-app-endpoint.modal.run/get', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const text = await response.text();
+                responseDiv.textContent = text;
+            } catch (error) {
+                responseDiv.textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

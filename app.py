@@ -11,8 +11,10 @@ from src.prompt import *
 from src.utils import simulate_streaming_response
 import os
 import re
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 load_dotenv()
 
@@ -64,5 +66,5 @@ def chat():
 
 
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port= 5000, debug= True)
+# if __name__ == '__main__':
+#     app.run(host="0.0.0.0", port= 5000, debug= True)

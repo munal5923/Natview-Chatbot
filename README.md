@@ -4,7 +4,7 @@ A Retrieval-Augmented Generation (RAG)-based chatbot built to assist users by an
 
 ---
 
-## 🔥 Key Features
+## Key Features
 
 - **RAG Pipeline**: Combines local knowledge retrieval with LLM reasoning.
 - **DeepSeek LLaMA**: Lightweight, fine-tuned LLM for efficient response generation.
@@ -12,7 +12,7 @@ A Retrieval-Augmented Generation (RAG)-based chatbot built to assist users by an
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Python 3.10**
 - **LangChain**
@@ -21,7 +21,7 @@ A Retrieval-Augmented Generation (RAG)-based chatbot built to assist users by an
 
 ---
 
-## 📦 Setup
+## Setup
 
 ```bash
 git clone https://github.com/munal5923/Natview-Chatbot.git
